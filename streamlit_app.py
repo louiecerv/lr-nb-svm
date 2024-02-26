@@ -45,7 +45,7 @@ def app():
     st.write("""Strong in complex, high-dimensional spaces, 
              but computationally expensive.""")
 
-    st.wtrite("""Strengths: Handles high dimensions, maximizes separation, efficient memory use, 
+    st.write("""Strengths: Handles high dimensions, maximizes separation, efficient memory use, 
               and offers some non-linearity through kernels. Weaknesses: Computationally 
               demanding, can be difficult to interpret, and requires careful parameter tuning. 
               SVMs are powerful for complex problems, but their efficiency and 
