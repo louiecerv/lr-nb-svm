@@ -41,6 +41,16 @@ def app():
     leading to inaccurate predictions."""
     st.write(text)
 
+    st.write('Support Vector Machine')
+    st.write("""Strong in complex, high-dimensional spaces, 
+             but computationally expensive.""")
+
+    st.wtrite("""Strengths: Handles high dimensions, maximizes separation, efficient memory use, 
+              and offers some non-linearity through kernels. Weaknesses: Computationally 
+              demanding, can be difficult to interpret, and requires careful parameter tuning. 
+              SVMs are powerful for complex problems, but their efficiency and 
+              interpretability need consideration.""")
+
     # Create the logistic regression 
     clf = GaussianNB() 
     options = ['Naive Bayes', 'Logistic Regression', 'Support Vector Machine']
