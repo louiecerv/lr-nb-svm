@@ -15,7 +15,7 @@ from sklearn.metrics import classification_report
 # Define the Streamlit app
 def app():
     
-    st.title('Compare Logistic Regression and Naive Bayes Classifiers')
+    st.title('Logistic Regression, Naive Bayes Classifiers and Support Vector Machine')
     st.subheader('by Louie F. Cervantes M.Eng., WVSU College of ICT')
  
     st.write('Logistic Regression:')
