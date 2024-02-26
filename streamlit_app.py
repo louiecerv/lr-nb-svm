@@ -51,7 +51,7 @@ def app():
               SVMs are powerful for complex problems, but their efficiency and 
               interpretability need consideration.""")
 
-    # Create the logistic regression 
+    # Create the selecton of classifier
     clf = GaussianNB() 
     options = ['Naive Bayes', 'Logistic Regression', 'Support Vector Machine']
     selected_option = st.selectbox('Select the classifier', options)
