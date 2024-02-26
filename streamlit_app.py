@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
+from sklearn import svm
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -42,7 +43,7 @@ def app():
 
     # Create the logistic regression 
     clf = GaussianNB() 
-    options = ['Naive Bayes', 'Logistic Regression']
+    options = ['Naive Bayes', 'Logistic Regression', 'Support Vector Machine']
     selected_option = st.selectbox('Select the classifier', options)
     if selected_option=='Logistic Regression':
         clf = LogisticRegression(C=1.0, class_weight=None, 
@@ -50,6 +51,8 @@ def app():
             intercept_scaling=1, max_iter=100, multi_class='auto',
             n_jobs=1, penalty='l2', random_state=42, solver='lbfgs',
             tol=0.0001, verbose=0, warm_start=False)
+    if selected_option=='Support Vector Machine':
+        clf = svm.SVC(kernel='linear', C=1000)
     else:
         clf = GaussianNB()
         
