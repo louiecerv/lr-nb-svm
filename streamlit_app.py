@@ -62,7 +62,7 @@ def app():
             n_jobs=1, penalty='l2', random_state=42, solver='lbfgs',
             tol=0.0001, verbose=0, warm_start=False)
     elif selected_option=='Support Vector Machine':
-        clf = svm.SVC(kernel='linear', C=1000)
+        clf = svm.SVC(kernel='rbf', C=1000)
     else:
         clf = GaussianNB()
         
